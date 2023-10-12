@@ -1,4 +1,3 @@
-
 # NoSQL Databases
 
 ## Introduction
@@ -31,7 +30,7 @@ Note that while this flexibility makes it easy for us to store data on the fly, 
 
 ##### Popular  Document Store Databases: MongoDB and Couchbase
 
-| <img src="images/mongo-db-logo.png" height=60% width=60%> | <img src="images/couchbase-logo.png"> |
+| <img src="https://curriculum-content.s3.amazonaws.com/data-science/images/mongo-db-logo.png" height=60% width=60%> | <img src="https://curriculum-content.s3.amazonaws.com/data-science/images/couchbase-logo.png"> |
 |---------------------|---------------------|
 
 ## Key-Value Stores and Column Stores
@@ -44,7 +43,7 @@ Although **_Key-Value Stores_** and **_Column Stores_** are two different kinds 
 
 ##### Popular Column Store Database: Google BigTable
 
-| <img src="images/bigtable.png" height=60% width=60%>    | <img src="images/dynamodb.png"> |
+| <img src="https://curriculum-content.s3.amazonaws.com/data-science/images/bigtable.png" height=60% width=60%>    | <img src="https://curriculum-content.s3.amazonaws.com/data-science/images/dynamodb.png"> |
 |---------------------|---------------------|
 
 ## Graph Databases
@@ -54,7 +53,7 @@ Although **_Key-Value Stores_** and **_Column Stores_** are two different kinds 
 ##### Popular Graph Databases: Neo4J and OrientDB
 
 
-| <img src="images/neo4j-logo.png"> | <img src="images/orientdb-logo.png"> |
+| <img src="https://curriculum-content.s3.amazonaws.com/data-science/images/neo4j-logo.png"> | <img src="https://curriculum-content.s3.amazonaws.com/data-science/images/orientdb-logo.png"> |
 |---------------------|---------------------|
 
 
@@ -70,7 +69,7 @@ As an example, let's pretend that you're a Data Scientist for a major retailer t
 However, this would be a very different story with an RDD like Hadoop or Spark. Instead of running this on a single machine, we can just put a small server in each store location to keep track of all that store's data and transactions. When we need to run a query, our distributed system will ask each store's server to get the total number of sales for each department _simultaneously_. For a single store, this is a much smaller query, so it will run quite quickly. Then, once we have the totals for each department from each store, we can just combine them together into grand totals for each, getting us the answer we needed in seconds instead of days! The idea of having each server run some query or function at the same time, and then combining the results is based on the idea of **_MapReduce_**, which is the secret sauce behind RDDs. When we ask each server to run the function or query at the same time, this is the "Map" step. When we combine the results from each server into a single aggregate, this is the "Reduce" step. 
 
 
-| <img src="images/hadoop.png"> | <img src="images/spark.png" height=10% width=10%> |
+| <img src="https://curriculum-content.s3.amazonaws.com/data-science/images/hadoop.png"> | <img src="https://curriculum-content.s3.amazonaws.com/data-science/images/spark.png" height=10% width=10%> |
 |---------------------|---------------------|
 
 ## Summary
